@@ -1,0 +1,262 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box !important;
+}
+
+.present {
+  display: none;
+  background: linear-gradient(
+    107.17deg,
+    #958c40 29.35%,
+    rgba(156, 0, 210, 0.8) 78.73%
+  );
+  height: 100vh;
+}
+
+.header__nav--desk {
+  display: none;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  height: 15vh;
+  flex-direction: row;
+  justify-content: space-around;
+  color: white;
+  font-family: Poppins;
+  align-items: center;
+  background-color: #000000;
+}
+
+.header__brandname {
+  font-family: "Titillium Web";
+  font-size: 3rem;
+}
+
+.header__nav__hambut {
+  background: none;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  transition: 0.4s ease-out;
+  z-index: 1;
+}
+
+.header__nav__hambut--lines {
+  width: 3rem;
+  height: 0.5rem;
+  background-color: rgb(255 255 255);
+  margin: 0.2rem 0rem;
+  transition: 0.4s ease-out;
+}
+
+.change.topline {
+  transform: rotate(-45deg) translate(1px, -2px);
+  position: absolute;
+}
+
+.change.midline {
+  opacity: 0;
+}
+
+.change.botline {
+  transform: rotate(45deg) translate(-12px, -10px);
+}
+
+.header__nav__menu {
+  display: none;
+  position: absolute;
+  background-color: #161616;
+  height: 100%;
+  width: 100%;
+  top: 0;
+}
+
+.header__nav__menu--show {
+  display: block;
+}
+
+.header__nav__menu--list {
+  list-style-type: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 3.5rem;
+  font-family: Montserrat;
+  font-weight: 600;
+}
+
+li > a {
+  color: white;
+  text-decoration: none;
+}
+
+.stuck {
+  overflow-y: hidden;
+}
+
+.myservices {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-family: "Poppins";
+  background-color: #000000;
+  color: wheat;
+}
+
+.myservices__title {
+  font-family: "Montserrat";
+  margin: 15%;
+  font-size: 3rem;
+}
+
+.myservices__icons {
+  max-width: 40%;
+  max-height: 40%;
+  background-color: white;
+}
+
+.myservices__subtitles {
+  font-size: 2.3rem;
+  margin: 15%;
+  font-family: "Montserrat";
+}
+
+.myservices__par {
+  margin: 15%;
+  font-size: 1.3rem;
+}
+
+.footer {
+  height: 45vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.footer__brandname {
+  font-size: 3.5rem;
+  font-family: "Titillium Web";
+}
+
+.footer__social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: black;
+}
+
+.footer__social > span {
+  font-family: "Poppins";
+  font-size: 1.5rem;
+  float: right;
+}
+
+.footer__social > img {
+  width: 50px;
+  height: 50px;
+}
+
+@media (min-width: 768px) {
+  /*////////// Welcome ///////// */
+  .header__nav__hambut {
+    display: none;
+  }
+
+  .header {
+    position: absolute;
+    background-color: transparent;
+  }
+
+  .present {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .present__title {
+    font-family: Montserrat;
+    font-size: 3rem;
+    color: white;
+    margin-left: 8%;
+  }
+
+  .header__nav--desk {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 2rem;
+    width: 70%;
+  }
+  .myservices {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 25% 75%;
+    height: 110vh;
+    grid-template-areas:
+      "a b c"
+      "d e f";
+  }
+
+  .myservices__title {
+    grid-area: b;
+    align-self: center;
+    margin: 0;
+  }
+
+  .myservices__par {
+    margin: 10%;
+  }
+
+  .myservices__subtitles {
+    margin: 0;
+  }
+
+  .s1 {
+    grid-area: d;
+  }
+  .s2 {
+    grid-area: e;
+  }
+  .s3 {
+    grid-area: f;
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "a b c" "d e f" "g h i";
+  }
+  .footer__social--LI {
+    grid-area: c;
+    justify-self: end;
+    margin-right: 10%;
+  }
+  .footer__social--GH {
+    grid-area: f;
+    justify-self: end;
+    margin-right: 10%;
+  }
+  .footer__social--IN {
+    grid-area: i;
+    justify-self: end;
+    margin-right: 10%;
+  }
+
+  .footer__brandname {
+    grid-area: d;
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+  }
+}

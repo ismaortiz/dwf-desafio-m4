@@ -1,0 +1,281 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box !important;
+}
+
+.header__nav--desk {
+  display: none;
+}
+
+.header {
+  display: flex;
+  width: 100%;
+  height: 15vh;
+  position: absolute;
+  flex-direction: row;
+  justify-content: space-around;
+  color: white;
+  font-family: Poppins;
+  align-items: center;
+}
+
+.header__brandname {
+  font-family: "Titillium Web";
+  font-size: 2.8rem;
+}
+
+.header__nav__hambut {
+  background: none;
+  border: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  transition: 0.4s ease-out;
+  z-index: 2;
+}
+
+.header__nav__hambut--lines {
+  width: 3rem;
+  height: 0.5rem;
+  background-color: rgb(255 255 255);
+  margin: 0.2rem 0rem;
+  transition: 0.4s ease-out;
+}
+
+.change.topline {
+  transform: rotate(-45deg) translate(1px, -2px);
+  position: absolute;
+}
+
+.change.midline {
+  opacity: 0;
+}
+
+.change.botline {
+  transform: rotate(45deg) translate(-12px, -10px);
+}
+
+.header__nav__menu {
+  display: none;
+  position: absolute;
+  background-color: #161616;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.header__nav__menu--show {
+  display: block;
+}
+
+.header__nav__menu--list {
+  list-style-type: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: 3.5rem;
+  font-family: Montserrat;
+  font-weight: 600;
+  z-index: 2;
+}
+
+li > a {
+  color: #ffff;
+  text-decoration: none;
+}
+
+.stuck {
+  overflow-y: hidden;
+}
+
+.contact {
+  background-color: #141414;
+  height: 130vh;
+  font-family: "Poppins";
+  color: white;
+  font-size: 1.8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.contact__title {
+  text-align: center;
+  font-family: "Montserrat";
+  font-size: 2.7rem;
+  justify-self: start;
+}
+
+.contact__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 115vh;
+  /* align-items: center; */
+  position: absolute;
+  top: 15%;
+}
+
+.contact__form__cbox {
+  display: flex;
+  flex-direction: column;
+}
+
+@media (max-width: 320px) {
+  .contact__form__inputs {
+    width: 85%;
+  }
+
+  .contact__form__cbox {
+    align-items: center;
+  }
+}
+
+.contact__form__inputs {
+  font-size: 1.6rem;
+  align-self: center;
+}
+
+.contact__form--msg {
+  font-size: 1.2rem;
+  resize: none;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode";
+  height: 25vh;
+}
+
+.contact__form__button {
+  background-color: #ffd953;
+  font-size: 1.8rem;
+  border-radius: 10px;
+  padding: 1rem 6rem;
+  align-self: center;
+}
+
+.footer {
+  height: 45vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.footer__brandname {
+  font-size: 3.5rem;
+  font-family: "Titillium Web";
+}
+
+.footer__social {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: black;
+}
+
+.footer__social > span {
+  font-family: "Poppins";
+  font-size: 1.5rem;
+  float: right;
+}
+
+.footer__social > img {
+  width: 50px;
+  height: 50px;
+}
+
+@media (min-width: 768px) {
+  .header__nav__hambut {
+    display: none;
+  }
+
+  .header__nav--desk {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    justify-content: space-evenly;
+    font-size: 1.5rem;
+    width: 70%;
+  }
+
+  .contact {
+    background: linear-gradient(
+      107.17deg,
+      #408195 29.35%,
+      rgba(0, 210, 135, 0.8) 78.73%
+    );
+  }
+
+  .contact__form {
+    display: grid;
+    grid-template-columns: 50% 60%;
+    grid-template-rows: 25% 25% 25% 25%;
+    grid-template-areas:
+      "a b"
+      "c d"
+      "e f"
+      "g h";
+    position: absolute;
+    left: 15%;
+    top: 25%;
+    height: 100%;
+  }
+  .ebox {
+    grid-area: d;
+  }
+
+  .mbox {
+    grid-area: f;
+  }
+
+  .contact__form__cbox {
+    justify-items: start;
+  }
+
+  .contact__form__inputs {
+    width: 100%;
+  }
+
+  .contact__form--msg {
+    height: 20vh;
+    width: 45vw;
+  }
+
+  .contact__form__button {
+    grid-area: h;
+    /* width: 60%; */
+    justify-self: center;
+  }
+
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "a b c" "d e f" "g h i";
+  }
+  .footer__social--LI {
+    grid-area: c;
+    justify-self: end;
+    margin-right: 10%;
+  }
+  .footer__social--GH {
+    grid-area: f;
+    justify-self: end;
+    margin-right: 10%;
+  }
+  .footer__social--IN {
+    grid-area: i;
+    justify-self: end;
+    margin-right: 10%;
+  }
+
+  .footer__brandname {
+    grid-area: d;
+    justify-self: center;
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+  }
+}

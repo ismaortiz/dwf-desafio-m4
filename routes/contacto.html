@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../components/contacto.css" />
+    <script async src="../components/contacto.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@300&family=Titillium+Web&display=swap"
+      rel="stylesheet"
+    />
+    <title>Contacto</title>
+  </head>
+  <body>
+    <div class="header">
+      <h2 class="header__brandname">ISMA</h2>
+      <ul class="header__nav--desk">
+        <li>
+          <a href="./portfolio.html">Portfolio</a>
+        </li>
+        <li>
+          <a href="./servicios.html">Servicios</a>
+        </li>
+        <li>
+          <a href="../index.html"">Inicio</a>
+        </li>
+      </ul>
+      <button class="header__nav__hambut">
+        <span class="header__nav__hambut--lines midline"></span>
+        <span class="header__nav__hambut--lines topline"></span>
+        <span class="header__nav__hambut--lines botline"></span>
+      </button>
+    </div>
+    <div class="header__nav__menu">
+      <ul class="header__nav__menu--list">
+        <li>
+          <a href="./portfolio.html">Portfolio</a>
+        </li>
+        <li>
+          <a href="./servicios.html">Servicios</a>
+        </li>
+        <li>
+          <a href="../index.html">Inicio</a>
+        </li>
+      </ul>
+    </div>
+    <div class="contact">
+      <form class="contact__form">
+        <h2 class="contact__title">Escribime</h2>
+        <div class="contact__form__cbox nbox">
+          <label for="name">Nombre</label>
+          <input required type="text" class="contact__form__inputs" id="name" />
+        </div>
+        <div class="contact__form__cbox ebox">
+          <label for="mail">EMAIL</label>
+          <input
+            required
+            type="email"
+            class="contact__form__inputs"
+            id="mail"
+          />
+        </div>
+        <div class="contact__form__cbox mbox">
+          <label for="contact__form--msg">Mensaje</label>
+          <textarea
+            required
+            maxlength="220"
+            type="text"
+            class="contact__form--msg"
+            id="message"
+            placeholder="Escríbeme y me pondre en contacto lo antes posible..."
+          ></textarea>
+        </div>
+        <button type="submit" class="contact__form__button">Enviar</button>
+      </form>
+    </div>
+    <div class="footer">
+      <h2 class="footer__brandname">ISMA</h2>
+      <a
+        href="https://www.linkedin.com/in/ismael-ortiz-6ba862232"
+        target="_blank"
+        class="footer__social footer__social--LI"
+      >
+        <img src="../assets/github.png" /><span>Github</span>
+      </a>
+      <a
+        href="https://github.com/ismaortiz"
+        target="_blank"
+        class="footer__social footer__social--GH"
+      >
+        <img src="../assets/linkedin.png" /><span>Linkedin</span>
+      </a>
+      <a
+        onclick="window.alert(`NO TENGO ¬¬`)"
+        href="#"
+        class="footer__social footer__social--IN"
+      >
+        <img src="../assets/instagram.png" /><span>Instagram</span>
+      </a>
+    </div>
+  </body>
+</html>

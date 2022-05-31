@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&family=Poppins:wght@300&family=Titillium+Web&display=swap"
+      rel="stylesheet"
+    />
+    <title>Desafio-m4</title>
+    <script defer src="./main.js"></script>
+  </head>
+  <body>
+    <div class="header">
+      <h2 class="header__brandname">ISMA</h2>
+      <ul class="header__nav--desk">
+        <li>
+          <a href="./routes/portfolio.html">Portfolio</a>
+        </li>
+        <li>
+          <a href="./routes/servicios.html">Servicios</a>
+        </li>
+        <li>
+          <a href="./routes/contacto.html">Contacto</a>
+        </li>
+      </ul>
+      <button class="header__nav__hambut">
+        <span class="header__nav__hambut--lines midline"></span>
+        <span class="header__nav__hambut--lines topline"></span>
+        <span class="header__nav__hambut--lines botline"></span>
+      </button>
+    </div>
+    <div class="header__nav__menu">
+      <ul class="header__nav__menu--list">
+        <li>
+          <a href="./routes/portfolio.html">Portfolio</a>
+        </li>
+        <li>
+          <a href="./routes/servicios.html">Servicios</a>
+        </li>
+        <li>
+          <a href="./routes/contacto.html">Contacto</a>
+        </li>
+      </ul>
+    </div>
+    <!-- <div class="main-container"> -->
+    <div class="greet">
+      <h1 class="greet__hello">Hola</h1>
+      <h2 class="greet__name">Soy Isma</h2>
+    </div>
+    <div class="intro">
+      <img src="./assets/Yo.png" class="intro__me" />
+      <div class="intro__alltext">
+        <h2 class="intro--title">Sobre Mí</h2>
+        <p class="intro--text">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ex incidunt
+          reprehenderit optio, tempore quia impedit, voluptatibus cumque
+          repellendus perspiciatis quaerat aliquam delectus illum, voluptatem
+          nobis rem! Sunt iusto beatae earum.
+        </p>
+      </div>
+    </div>
+    <div class="myservices">
+      <h2 class="myservices__title">Mis Servicios</h2>
+      <div class="myservices__tec s1">
+        <img src="./assets/html5-icon.png" alt="" class="myservices__icons" />
+        <h3 class="myservices__subtitles">HTML5</h3>
+        <p class="myservices__par">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga totam
+          nisi iste dolore dicta recusandae harum tempore distinctio, atque,
+          excepturi cupiditate odio suscipit delectus? Saepe modi quia molestias
+          hic voluptatem.
+        </p>
+      </div>
+      <div class="myservices__tec s2">
+        <img src="./assets/css-icon.png" alt="" class="myservices__icons" />
+        <h3 class="myservices__subtitles">CSS3</h3>
+        <p class="myservices__par">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga totam
+          nisi iste dolore dicta recusandae harum tempore distinctio, atque,
+          excepturi cupiditate odio suscipit delectus? Saepe modi quia molestias
+          hic voluptatem.
+        </p>
+      </div>
+      <div class="myservices__tec s3">
+        <img src="./assets/typescript-icon.png" class="myservices__icons" />
+        <h3 class="myservices__subtitles">TYPESCRIPT</h3>
+        <p class="myservices__par">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga totam
+          nisi iste dolore dicta recusandae harum tempore distinctio, atque,
+          excepturi cupiditate odio suscipit delectus? Saepe modi quia molestias
+          hic voluptatem.
+        </p>
+      </div>
+    </div>
+    <div class="contact">
+      <form class="contact__form">
+        <h2 class="contact__title">Escribime</h2>
+        <div class="contact__form__cbox nbox">
+          <label for="name">Nombre</label>
+          <input required type="text" class="contact__form__inputs" id="name" />
+        </div>
+        <div class="contact__form__cbox ebox">
+          <label for="mail">EMAIL</label>
+          <input
+            required
+            type="email"
+            class="contact__form__inputs"
+            id="mail"
+          />
+        </div>
+        <div class="contact__form__cbox mbox">
+          <label for="contact__form--msg">Mensaje</label>
+          <textarea
+            required
+            maxlength="220"
+            type="text"
+            class="contact__form--msg"
+            placeholder="Escríbeme y me pondre en contacto lo antes posible..."
+          ></textarea>
+        </div>
+        <button type="submit" class="contact__form__button">Enviar</button>
+      </form>
+    </div>
+    <!-- </div> -->
+    <div class="footer">
+      <h2 class="footer__brandname">ISMA</h2>
+      <a
+        href="https://www.linkedin.com/in/ismael-ortiz-6ba862232"
+        target="_blank"
+        class="footer__social footer__social--LI"
+      >
+        <img src="./assets/github.png" /><span>Github</span>
+      </a>
+      <a
+        href="https://github.com/ismaortiz"
+        target="_blank"
+        class="footer__social footer__social--GH"
+      >
+        <img src="./assets/linkedin.png" /><span>Linkedin</span>
+      </a>
+      <a
+        onclick="window.alert(`NO TENGO ¬¬`)"
+        href="#"
+        class="footer__social footer__social--IN"
+      >
+        <img src="./assets/instagram.png" /><span>Instagram</span>
+      </a>
+    </div>
+  </body>
+</html>
