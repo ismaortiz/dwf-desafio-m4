@@ -11,7 +11,7 @@ function loadPro(data) {
   const textData = data["items"];
   const mediaData = data["includes"]["Asset"];
   for (let i = 0; i < subtitles.length; i++) {
-    subtitles[i].textContent = textData[i]["fields"]["projectTitle"];
+    subtitles[i].textContent = textData[i]["fields"]["serviceTitle"];
     // descriptions[i].textContent = textData[i]["fields"]["projectDescription"];
     imgs[i].src = mediaData[i]["fields"]["file"]["url"];
   }
