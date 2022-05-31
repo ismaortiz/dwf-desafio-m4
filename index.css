@@ -277,6 +277,23 @@ li > a {
     Media Queries
    ////////////////////
 */
+@media (max-width: 370px) {
+  .contact__form__cbox {
+    align-items: center;
+  }
+}
+
+@media (max-width: 280px) {
+  .intro--title {
+    margin: 0;
+    font-size: 2.8rem;
+  }
+
+  .intro--text {
+    margin: 0;
+    text-align: center;
+  }
+}
 
 @media (min-width: 768px) {
   /*////////// Welcome ///////// */
