@@ -124,7 +124,7 @@ li > a {
   color: white;
   font-family: "Roboto";
   display: flex;
-  height: 110vh;
+  height: 100%;
 }
 
 .intro__me {
@@ -141,13 +141,14 @@ li > a {
 .intro--title {
   font-family: "Montserrat";
   margin: 5%;
-  font-size: 3rem;
+  font-size: 4rem;
+  text-align: center;
 }
 
 .intro--text {
   align-self: center;
   margin: 5% 10%;
-  font-size: 2rem;
+  font-size: 2.5rem;
 }
 
 /* ////////////////////
@@ -319,8 +320,9 @@ li > a {
   .intro__me {
     display: block;
     align-self: center;
-    width: 100%;
-    height: 65%;
+    justify-self: center;
+    width: 80%;
+    height: 80%;
   }
 
   .intro__alltext {
@@ -432,5 +434,29 @@ li > a {
     align-self: center;
     display: flex;
     flex-direction: column;
+  }
+}
+
+@media (min-width: 1024px) {
+  .contact__form--msg {
+    width: 32vw;
+  }
+}
+
+@media (min-width: 1440px) {
+  .contact__form--msg {
+    width: 23vw;
+  }
+}
+
+@media (min-width: 1600px) {
+  .contact__form--msg {
+    width: 21vw;
+  }
+}
+
+@media (min-width: 1920px) {
+  .contact__form--msg {
+    width: 21vw;
   }
 }

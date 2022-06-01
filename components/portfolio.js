@@ -11,9 +11,19 @@ function loadPro(data) {
   const textData = data["items"];
   const mediaData = data["includes"]["Asset"];
   for (let i = 0; i < subtitles.length; i++) {
-    subtitles[i].textContent = textData[i]["fields"]["projectTitle"];
-    descriptions[i].textContent = textData[i]["fields"]["projectDescription"];
-    imgs[i].src = mediaData[i]["fields"]["file"]["url"];
+    for (let j = 0; j < subtitles.length; j++) {
+      if (
+        textData[i]["sys"]["space"]["sys"]["id"] ===
+        mediaData[j]["sys"]["space"]["sys"]["id"]
+      ) {
+        // subtitles[i].textContent = textData[j]["fields"]["projectTitle"];
+        imgs[j].src = "https:" + mediaData[j]["fields"]["file"]["url"];
+      }
+      // else {
+      //   imgs[j].src = "https:" + mediaData[j]["fields"]["file"]["url"];
+      //   subtitles[j].textContent = textData[j]["fields"]["projectTitle"];
+      // }
+    }
   }
 }
 
